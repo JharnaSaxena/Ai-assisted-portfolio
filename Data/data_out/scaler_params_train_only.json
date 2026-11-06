@@ -1,0 +1,31 @@
+{
+  "fit_on": "train rows only",
+  "train_period": [
+    "2017-01-01",
+    "2022-12-31"
+  ],
+  "n_train_rows": 2504,
+  "features": {
+    "ret_1w": {
+      "mean": 0.39327068995746195,
+      "std": 3.791081458810841
+    },
+    "ret_4w": {
+      "mean": 1.59165960978059,
+      "std": 7.465959475927724
+    },
+    "vol_8w": {
+      "mean": 3.4646223000791774,
+      "std": 1.6101719809166668
+    },
+    "nifty_ret_1w": {
+      "mean": 0.28220384076171956,
+      "std": 2.373644383377933
+    },
+    "volume_ratio_8w": {
+      "mean": 1.0063324948942574,
+      "std": 0.40419216316834805
+    }
+  },
+  "note": "z = (x - mean) / std. Target is NOT scaled here; Team D decides about the target."
+}

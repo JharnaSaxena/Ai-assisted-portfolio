@@ -1,0 +1,41 @@
+DATA QUALITY REPORT   (source=yfinance, as-of=2026-10-09)
+Prices: Yahoo Finance auto-adjusted (splits + dividends)
+Weekly convention: last trading-day close of the week, labelled by Friday; volume = weekly sum.
+
+RELIANCE.NS     daily rows= 2683  first=2015-12-01  last=2026-10-09
+TCS.NS          daily rows= 2683  first=2015-12-01  last=2026-10-09
+HDFCBANK.NS     daily rows= 2683  first=2015-12-01  last=2026-10-09
+HINDUNILVR.NS   daily rows= 2683  first=2015-12-01  last=2026-10-09
+SUNPHARMA.NS    daily rows= 2683  first=2015-12-01  last=2026-10-09
+LT.NS           daily rows= 2683  first=2015-12-01  last=2026-10-09
+MARUTI.NS       daily rows= 2683  first=2015-12-01  last=2026-10-09
+BHARTIARTL.NS   daily rows= 2683  first=2015-12-01  last=2026-10-09
+^NSEI           daily rows= 2676  first=2015-12-01  last=2026-10-09
+
+Missing-week handling (price carried forward max 1 week, volume set to 0 for those weeks):
+  RELIANCE.NS     filled=  0   still_missing_after_fill=  0
+  TCS.NS          filled=  0   still_missing_after_fill=  0
+  HDFCBANK.NS     filled=  0   still_missing_after_fill=  0
+  HINDUNILVR.NS   filled=  0   still_missing_after_fill=  0
+  SUNPHARMA.NS    filled=  0   still_missing_after_fill=  0
+  LT.NS           filled=  0   still_missing_after_fill=  0
+  MARUTI.NS       filled=  0   still_missing_after_fill=  0
+  BHARTIARTL.NS   filled=  0   still_missing_after_fill=  0
+  ^NSEI           filled=  0   still_missing_after_fill=  0
+
+Rows in project window: 4064;  dropped (missing feature/target): 0;  kept: 4064
+
+Weeks with |return| > 25% (CHECK THESE MANUALLY - possible unadjusted corporate action):
+  2020-04-10 MARUTI.NS: +32.8%
+
+Rows per split and stock:
+  split          train  val  test
+  ticker                         
+  BHARTIARTL.NS    313  104    91
+  HDFCBANK.NS      313  104    91
+  HINDUNILVR.NS    313  104    91
+  LT.NS            313  104    91
+  MARUTI.NS        313  104    91
+  RELIANCE.NS      313  104    91
+  SUNPHARMA.NS     313  104    91
+  TCS.NS           313  104    91
